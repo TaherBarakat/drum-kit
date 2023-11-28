@@ -20,6 +20,7 @@ html {
 }
 
 .key {
+  z-index: 100;
   border: 0.4rem solid black;
   border-radius: 0.5rem;
   margin: 1rem;
@@ -40,10 +41,19 @@ html {
 }
 
 kbd {
+  pointer-events: none;
+
   display: block;
   font-size: 4rem;
+  z-index: 0;
+  position: relative;
 }
+span {
+  pointer-events: none;
 
+  position: relative;
+  z-index: 0;
+}
 .sound {
   font-size: 1.2rem;
   text-transform: uppercase;
