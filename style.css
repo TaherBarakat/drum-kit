@@ -50,3 +50,25 @@ kbd {
   letter-spacing: 0.1rem;
   color: #ffc600;
 }
+
+@media (max-width: 1000px) {
+  .keys > div {
+    width: calc((100vw / 3) - 100px);
+    height: calc((100vw / 3) - 100px);
+  }
+  .keys * {
+    font-size: 5rem;
+  }
+
+  .keys {
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 5px 5px;
+    grid-auto-flow: row;
+  }
+}
