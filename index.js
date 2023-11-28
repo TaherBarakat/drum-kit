@@ -20,3 +20,4 @@ let click = function (e) {
 };
 
 keys.forEach((key) => key.addEventListener("mousedown", click, true));
+keys.forEach((key) => key.addEventListener("touchstart", click, true));
