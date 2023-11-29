@@ -9,7 +9,7 @@ let keys1 = document.querySelectorAll("span");
 let keys2 = document.querySelectorAll("kpd");
 let click = function (e) {
   {
-    console.log(e.target);
+    console.log(e);
     let audio = document.querySelector(
       `audio[data-key="${e.target.getAttribute("data-key")}"]`
     );
